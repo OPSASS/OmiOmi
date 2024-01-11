@@ -1,0 +1,111 @@
+.chat-body {
+  .message-main {
+    min-height: 81vh;
+    max-height: 81vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .message-body {
+      position: relative;
+      margin-bottom: 10px;
+      overflow-x: hidden;
+
+      .message-list {
+        .user-align {
+          align-items: flex-start;
+        }
+        .me-align {
+          align-items: flex-end;
+        }
+        .group-mess {
+          display: flex;
+          flex-direction: column;
+
+          .ms-item {
+            position: relative;
+            display: flex;
+            margin-bottom: 2px;
+            margin-top: 3px;
+
+            .item {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-end;
+
+              .show-time {
+                display: none;
+              }
+
+              .chat-more {
+                position: absolute;
+                opacity: 0;
+                transition: 0.3s;
+              }
+              .us-more {
+                right: -120px;
+              }
+              .me-more {
+                left: -120px;
+              }
+              &:hover .chat-more {
+                opacity: 1;
+              }
+            }
+
+            .user-text,
+            .me-text {
+              color: var(--whiteColor);
+              padding: 5px 12px;
+              border-radius: 15px 15px 5px 15px;
+              word-break: break-word;
+              max-width: 25vw;
+              width: 100%;
+            }
+            .user-bg {
+              background-color: var(--grayColor);
+            }
+            .user-text {
+              margin-left: 5px;
+              border-radius: 5px 15px 15px 5px;
+            }
+            .me-bg {
+              background-color: var(--primary);
+            }
+            .iconSizeLg {
+              font-size: 50px;
+              padding: 0 !important;
+            }
+            .iconSizeMd {
+              font-size: 28px;
+              padding: 0 !important;
+            }
+            .me-text {
+              border-radius: 15px 5px 5px 15px;
+            }
+            &:first-child {
+              .user-text {
+                // border-radius: 5px 15px 15px 5px;
+              }
+              .me-text {
+                border-radius: 15px 15px 5px 15px;
+              }
+            }
+            &:last-child {
+              .user-text {
+                border-radius: 5px 15px 15px 15px;
+              }
+              .me-text {
+                border-radius: 15px 5px 15px 15px;
+              }
+              .show-time {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

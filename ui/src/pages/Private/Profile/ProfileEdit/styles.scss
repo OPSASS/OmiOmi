@@ -1,0 +1,32 @@
+.edit-profile {
+  min-height: 87vh;
+  .sidebar-edit {
+    width: 20%;
+    height: 100%;
+    position: relative;
+
+    .content-edit {
+      transition: 0.3s;
+      padding: 8px 5px;
+      margin: 5px 0;
+      font-size: 16px;
+      h4 {
+        margin-left: 10px;
+      }
+    }
+    .active {
+      background-color: var(--bgColorPink);
+      color: var(--whiteColor);
+      padding-left: 20px;
+    }
+    .content-edit:hover {
+      background-color: var(--primary);
+      color: var(--whiteColor);
+      padding-left: 10px;
+    }
+  }
+  .main-edit {
+    width: 80%;
+    height: 100%;
+  }
+}

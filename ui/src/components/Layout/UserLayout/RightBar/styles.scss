@@ -1,0 +1,53 @@
+.user_container {
+  // position: fixed;
+  margin: 24px;
+  .user-main {
+    background-color: var(--whiteBgColor);
+    border-radius: 25px;
+    margin: 15px;
+  }
+  a:hover {
+    color: var(--primary);
+  }
+  h3 {
+    margin-bottom: 10px;
+  }
+  .user_avt {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .info {
+    width: 100%;
+    margin: 10px auto;
+  }
+  .user_follow_container {
+    margin-top: 20px;
+
+    height: 100%;
+
+    .user_follow_new {
+      width: 98%;
+      height: auto;
+      .user_follow_acc_item {
+        background-color: var(--whiteBgColor);
+        margin: 10px auto;
+        .info_acc {
+          margin-left: 10px;
+          width: 80%;
+          height: auto;
+        }
+      }
+    }
+    .user_follows {
+      width: 98%;
+      height: auto;
+    }
+  }
+}

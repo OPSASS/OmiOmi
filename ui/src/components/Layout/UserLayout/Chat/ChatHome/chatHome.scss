@@ -1,0 +1,82 @@
+.chat_container {
+  z-index: 10;
+  &:hover .hidded {
+    opacity: 1;
+  }
+  .chat-nav {
+    width: 70px;
+    z-index: 50;
+    .chat-bar {
+      padding: 10px;
+      .user-chat {
+        margin-top: 10px;
+        .infor-us {
+          position: relative;
+          .x-butt-sm {
+            position: absolute;
+            top: -10px;
+            left: 30px;
+            padding: 5px;
+            background-color: var(--whiteBgColor);
+            opacity: 0;
+          }
+
+          .user-name {
+            color: var(--blackColor);
+            display: none;
+            z-index: 50;
+            position: absolute;
+            left: 60px;
+            top: 5px;
+            padding: 5px 15px;
+            width: auto;
+            background-color: var(--whiteBgColor2);
+            border-radius: 5px;
+          }
+          &:hover .user-name {
+            display: block;
+          }
+          &:hover .x-butt-sm {
+            opacity: 1;
+          }
+        }
+
+        .box-message {
+          position: absolute;
+          top: 0;
+          left: 70px;
+          bottom: 0;
+        }
+      }
+    }
+  }
+  .hidded {
+    position: absolute;
+    z-index: 20;
+    top: 52%;
+    right: -12px;
+    opacity: 0;
+    background-color: var(--whiteBgColor);
+    transition: 0.3s;
+    &:hover {
+      background-color: var(--whiteBgColor3);
+      color: var(--primary);
+    }
+  }
+}
+
+.add-chat-box {
+  position: fixed;
+  width: 290px;
+  height: 100%;
+  left: 70px;
+  z-index: 100;
+  background-color: var(--whiteBgColor);
+  .user-add {
+    background-color: var(--whiteBgColor);
+    padding: 5px;
+  }
+}
+.chat-box {
+  height: 600px;
+}

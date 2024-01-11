@@ -1,0 +1,67 @@
+.profile-infor {
+  height: 580px;
+
+  .formBg {
+    position: relative;
+    margin-top: 12px;
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px 10px 20px 170px;
+    color: var(--whiteColor);
+    .but-form {
+      position: absolute;
+      right: 25px;
+      * {
+        margin-left: 15px;
+      }
+    }
+  }
+  .prf-top {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    .addbg {
+      z-index: 10;
+      padding: 10px;
+      background-color: var(--whiteColor);
+      transition: 0.3s;
+      color: var(--blackColor);
+      &:hover {
+        background-color: var(--blackColor);
+        color: var(--primary);
+      }
+    }
+  }
+  .info {
+    position: absolute;
+    top: 100px;
+    z-index: 5;
+    color: var(--whiteColor);
+    width: 200px;
+    height: 200px;
+
+    .avt-prf {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+
+      .avt-update {
+        .avt-upload {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          background-color: rgba(0, 0, 0, 0.3);
+          z-index: 1;
+          inset: 0;
+          opacity: 0;
+        }
+        &:hover .avt-upload {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

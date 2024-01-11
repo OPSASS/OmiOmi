@@ -1,0 +1,35 @@
+.uploadPreview {
+  margin-top: 24px;
+  .imgPreview {
+    position: relative;
+    .imgButtRm {
+      position: absolute;
+      z-index: 1;
+      top: 5px;
+      right: 7px;
+    }
+  }
+  .uploadImgPrev {
+    position: relative;
+    display: block;
+    &:hover .showImg {
+      display: none;
+    }
+    .showImg {
+      h3 {
+        font-size: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        z-index: 1;
+      }
+      .bgImg {
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.39);
+      }
+    }
+  }
+}

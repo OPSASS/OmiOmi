@@ -1,0 +1,29 @@
+.search {
+  position: relative;
+  width: auto;
+  background-color: var(--whiteBgColor);
+  padding: 0 10px;
+  border: 1px solid var(--grayBgColor2);
+  color: var(--grayBgColor2);
+  width: 100%;
+  &:hover {
+    background-color: var(--whiteBgColor2);
+    color: var(--blackColor);
+  }
+  input {
+    height: 40px;
+    font-size: 15px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: all 0.5s ease-out;
+  }
+  .focus {
+    transition-delay: 0.3s;
+  }
+  .load-search {
+    position: absolute;
+    right: 10px;
+  }
+}

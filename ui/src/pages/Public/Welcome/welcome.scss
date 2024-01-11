@@ -1,0 +1,97 @@
+$starFieldWidth: 2560;
+$starFieldHeight: 600;
+$starStartOffset: 600;
+
+$starOneScrollDuration: 100s;
+$starTwoScrollDuration: 125s;
+$starThreeScrollDuration: 175s;
+$numStarOneStars: 700;
+$numStarTwoStars: 700;
+$numStarThreeStars: 200;
+$numShootingStars: 10;
+$width: 100%;
+.bg {
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.4);
+  }
+}
+.blacks {
+  position: relative;
+  height: 230px;
+  margin-top: 22%;
+  z-index: 10;
+}
+.text_info {
+  font-size: 80px;
+  color: var(--primary);
+  text-shadow: 0 0 10px var(--blackColor);
+}
+.wc-main {
+  margin-top: 250px;
+  background: var(--whiteColor);
+  z-index: 2;
+  .feedback {
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
+    .us-fb {
+      width: 100%;
+      height: auto;
+      background: var(--whiteColor);
+      border-radius: 10px;
+      padding: 15px 15px 35px 15px;
+      h3 {
+        padding: 10px;
+      }
+    }
+  }
+  .intro {
+    padding: 120px 0 30px;
+    a {
+      color: var(--primary);
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+  .call_for {
+    margin: 50px 0 0;
+    position: relative;
+    width: 100vw;
+    height: 620px;
+    background: linear-gradient(to bottom, #020107 0%, #201b46 100%);
+    .emoji {
+      z-index: 99;
+    }
+    .texts {
+      color: var(--whiteColor);
+      font-size: 40px;
+      z-index: 99;
+    }
+    .stars {
+      width: 100vw;
+      height: 100%;
+      position: absolute;
+      background: transparent url('http://localhost:3000/stars.jpg') repeat top center;
+      animation: move-twink-back 200s linear infinite;
+    }
+
+    @keyframes move-twink-back {
+      from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: -10000px 5000px;
+      }
+    }
+  }
+}

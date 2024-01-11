@@ -1,0 +1,9 @@
+.chart-ad {
+  position: relative;
+  .select-ad {
+    position: absolute;
+    top: 5px;
+    right: 24px;
+    z-index: 2;
+  }
+}

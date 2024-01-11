@@ -1,0 +1,78 @@
+.bg-prf {
+  position: relative;
+  height: 100vh;
+  .bg-img {
+    position: fixed;
+    width: calc(100vw - 80px);
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    .bg {
+      position: absolute;
+      width: auto;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+      inset: 0;
+      margin: 0 auto;
+      filter: brightness(0.6);
+    }
+    .bg2 {
+      position: absolute;
+      width: 100vw;
+      height: 105%;
+      object-fit: cover;
+      inset: 0;
+      margin-top: -22px;
+      filter: brightness(0.3) blur(10px);
+    }
+  }
+  .prf-main {
+    width: 100%;
+    height: auto;
+    z-index: 10;
+    .child-prf {
+      margin: 15px;
+      position: relative;
+      .prf-tab {
+        .tab {
+          transition: 0.3s;
+          padding: 15px 5px;
+          margin: 5px 0;
+          font-size: 20px;
+          h4 {
+            margin-left: 10px;
+          }
+        }
+        .active {
+          background-color: var(--bgColorPink);
+          color: var(--whiteColor);
+          padding-left: 20px;
+        }
+        .tab:hover {
+          background-color: var(--primary);
+          color: var(--whiteColor);
+          padding-left: 10px;
+        }
+      }
+      .prf-infor {
+        right: 0;
+      }
+    }
+  }
+  .prf-tabs,
+  .prf-infor {
+    position: sticky;
+    top: 15px;
+    background-color: var(--whiteBgColor);
+    border-radius: 25px;
+    padding: 25px;
+  }
+  .prf-tabs {
+    left: 0;
+  }
+  .prf-infor {
+    right: 0;
+  }
+}

@@ -1,0 +1,26 @@
+.layoutAuth {
+  margin: 0 15px;
+
+  .leftAuth {
+    position: relative;
+    padding: 20px 50px 50px 35px;
+    height: 100vh;
+    .auth-img {
+      img {
+        width: 650px;
+      }
+    }
+    .navAuth a {
+      color: var(--whiteColor);
+      &:hover {
+        color: var(--blackColor2);
+      }
+    }
+  }
+  .headerAuth {
+    margin: 15px 0;
+    padding: 50px;
+    border-radius: 25px;
+    background-color: var(--whiteBgColor);
+  }
+}

@@ -1,0 +1,34 @@
+.thanh2 {
+  position: relative;
+  width: 100%;
+  height: 400px;
+
+  .thanh1 {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://free4kwallpapers.com/uploads/originals/2020/09/29/pink-skies-over-a-wet-street.-wallpaper_.jpg');
+    background-size: cover;
+    background-position-y: center;
+    filter: brightness(0.5);
+    z-index: 9;
+  }
+  .tieude {
+    z-index: 10;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-weight: bold;
+    font-size: 55px;
+    margin-top: 150px;
+  }
+}
+
+.font1 {
+  font-size: 35px;
+  margin-top: 70px;
+}
+.font2 {
+  font-size: 20px;
+}
+.font3 {
+  font-size: 20px;
+}

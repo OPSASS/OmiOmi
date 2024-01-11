@@ -1,0 +1,43 @@
+.user-card {
+  .active {
+    background-color: var(--bgColor);
+  }
+  .unactive {
+    background-color: rgb(243, 243, 243);
+    .user-if {
+      color: var(--blackBgColor);
+    }
+    .desc {
+      color: var(--grayColor);
+    }
+    &:hover {
+      background-color: var(--whiteBgColor);
+      .user-if {
+        color: var(--blackColor);
+      }
+      .desc {
+        color: var(--grayColor);
+      }
+    }
+  }
+  .desc {
+    margin-left: 50px;
+  }
+  .avt-badge {
+    position: relative;
+    .badge-status {
+      position: absolute;
+      bottom: -2px;
+      right: 0;
+      border: 3px solid rgb(255, 255, 255);
+      padding: 4px;
+      border-radius: 50%;
+    }
+    .succ {
+      background-color: green;
+    }
+    .err {
+      background-color: red;
+    }
+  }
+}

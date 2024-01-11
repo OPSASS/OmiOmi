@@ -1,0 +1,72 @@
+.mains {
+  position: relative;
+  background-color: var(--whiteBgColor);
+  margin: 0 auto;
+  z-index: 2;
+
+  border-radius: 25px;
+  padding: 25px;
+}
+.posts {
+  height: auto;
+  width: 100%;
+  color: var(--blackColor);
+
+  .welcome-us {
+    padding-bottom: 15px;
+  }
+}
+.infor {
+  width: 20%;
+  padding: 15px;
+  height: 200px;
+
+  background-color: var(--whiteBgColor);
+  .infor-main {
+    .love {
+      margin: 5px 0;
+    }
+    .love * {
+      margin-right: 5px;
+    }
+  }
+}
+.friends {
+  margin: 20px 20px;
+  height: auto;
+  width: 100%;
+  position: relative;
+  .boxfr {
+    position: relative;
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    background-color: var(--whiteBgColor);
+
+    .but-infor {
+      position: absolute;
+      z-index: 10;
+      right: 10px;
+
+      button {
+        background-color: var(--whiteBgColor);
+        &:hover {
+          background-color: var(--whiteBgColor);
+          color: var(--primary);
+        }
+      }
+    }
+  }
+}
+.albums {
+  margin: 20px 20px;
+  height: auto;
+  width: 81%;
+  h4 {
+    padding-bottom: 10px;
+  }
+}
+
+.edit-infor {
+  padding: 10px 20px;
+}

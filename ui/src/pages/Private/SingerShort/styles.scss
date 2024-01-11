@@ -1,0 +1,65 @@
+@import '../../../components/GlobalStyles/responsive.scss';
+
+.short-main {
+  width: 40%;
+  max-width: 80%;
+  margin: 24px;
+  .short-cards {
+    overflow: hidden;
+    width: 100%;
+    & > div {
+      background-color: var(--blackColor2);
+      padding: 0;
+    }
+    .short-body {
+      position: relative;
+      height: calc(100vh - 50px);
+      width: 100%;
+      .video-body {
+        .video-top {
+          position: absolute;
+          margin: auto 0;
+          z-index: 2;
+          inset: 0;
+        }
+      }
+
+      .short-tool {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        z-index: 3;
+
+        button {
+          color: var(--whiteColor);
+          filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.3));
+        }
+      }
+
+      .short-us,
+      .short-desc {
+        padding: 20px;
+        opacity: 0;
+        z-index: 3;
+        h4,
+        p,
+        i {
+          color: var(--whiteColor);
+        }
+      }
+      .short-us {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 65%, rgba(0, 0, 0, 0) 100%);
+      }
+      .short-desc {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 65%, rgba(0, 0, 0, 0) 100%);
+      }
+      * &:hover {
+        .short-us,
+        .short-desc {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

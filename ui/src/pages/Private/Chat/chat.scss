@@ -1,0 +1,59 @@
+@import '../../../components/GlobalStyles/responsive.scss';
+
+.chat-main {
+  min-height: calc(100vh - 45px);
+  height: 100%;
+  margin-right: 15px;
+  // margin-top: 15px;
+  .chat-left,
+  .chat-middle,
+  .chat-right {
+    margin-top: 15px;
+    border-radius: 25px;
+    padding: 25px;
+    background-color: var(--whiteBgColor);
+    min-height: 96vh;
+  }
+  .hidden {
+    @include respond-to(xs) {
+      display: none;
+    }
+    @include respond-to(sm) {
+      display: none;
+    }
+  }
+  .chat-middle {
+    .chat-empty {
+      max-width: 60%;
+      @include respond-to(xs) {
+        max-width: 100%;
+      }
+      @include respond-to(sm) {
+        max-width: 100%;
+      }
+      @include respond-to(md) {
+        max-width: 100%;
+      }
+      text-align: center;
+      margin: 0 auto;
+      & * {
+        margin: 10px 0;
+      }
+      .title {
+        font-size: 35px;
+      }
+      .desc {
+        font-size: 17px;
+      }
+    }
+  }
+  .chat-right {
+    display: none;
+    @include respond-to(xl) {
+      display: block;
+    }
+    @include respond-to(xxl) {
+      display: block;
+    }
+  }
+}

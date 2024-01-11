@@ -1,0 +1,30 @@
+.pl-layout {
+  margin: 0 15px;
+  .pl-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.02) 25%,
+      rgba(0, 0, 0, 0.02) 75%,
+      rgba(0, 0, 0, 0) 100%
+    );
+
+    a {
+      color: var(--whiteColor);
+
+      &:hover {
+        color: var(--primary);
+      }
+    }
+  }
+
+  .pl-header {
+    width: 100vw;
+    margin-left: -15px;
+    background-color: var(--whiteBgColor);
+  }
+}

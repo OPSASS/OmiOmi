@@ -1,0 +1,18 @@
+.post-detail-main {
+  margin: 24px;
+  .image {
+    width: 60vw;
+    height: 87vh;
+    background-color: rgb(12, 12, 12);
+    & > * {
+      width: 100%;
+      height: 100%;
+      img {
+        height: 100%;
+        width: auto;
+        margin: 0 auto;
+        object-fit: cover;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import '../GlobalStyles/responsive.scss';
+.textArea-form {
+  position: relative;
+  .textarea-box {
+    position: relative;
+    @include respond-to(xs) {
+      &:focus {
+        padding-right: 10px;
+        height: auto !important;
+        padding-bottom: 30px !important;
+      }
+      height: 40px !important;
+    }
+    @include respond-to(sm) {
+      &:focus {
+        padding-right: 10px;
+        height: auto !important;
+        padding-bottom: 30px !important;
+      }
+      height: 40px !important;
+    }
+  }
+  .send-butt {
+    position: absolute;
+    right: 5px;
+    bottom: 4px;
+    z-index: 10;
+  }
+}
